@@ -29,3 +29,10 @@ def is_char_unique(x=None, case_sensitivity=True):
 
     return True
 
+if __name__ == '__main__':
+
+    # This will return True
+    print(is_char_unique(x="abcABC"))
+
+    #This will return False, will treat "a" and "A" equally.
+    print(is_char_unique(x="abcABC", case_sensitivity=False))
